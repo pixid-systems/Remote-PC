@@ -1,0 +1,62 @@
+{
+    "title": "Remote PC",
+    "rules": [
+        {
+            "description": "Swap command-L and control-L",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "left_control",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_command"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "com\\.microsoft\\.rdc\\.mac",
+                                "com\\.ericom\\.blazeclient",
+                                "com\\.screenconnect\\.client"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "left_command",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_control"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "com\\.microsoft\\.rdc\\.mac",
+                                "com\\.ericom\\.blazeclient",
+                                "com\\.screenconnect\\.client"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
