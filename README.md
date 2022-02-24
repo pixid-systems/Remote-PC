@@ -9,7 +9,7 @@ Karabiner Key mapping for remote PC access
     ]
 </code></pre>
 
-<h1>Browser Install</h1><br>
+<h1>Browser Install [paste in browser]</h1><br>
 <code>
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/pixid-systems/Remote-PC/main/RemotePC.json
   </code>
